@@ -14,9 +14,11 @@ function draw() {
   background(200);
   
   push(); // create a new temporary drawing layer
-  translate(0, 0); // change these arguments
+  translate(200, 150); // change these arguments
   
-  //add an if() statement here
+  if(mouseIsPressed){
+    rotate(HALF_PI);
+  }//add an if() statement here
   
   line(0, -50, 40, -20);
   line(0, -50, -40, -20);
